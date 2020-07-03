@@ -2,6 +2,10 @@
   "name": "rf-log",
   "version": "1.0.0",
   "description": "The best radio frequency logger!",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/Brandon14irl/rf-log.git"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
