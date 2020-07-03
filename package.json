@@ -1,0 +1,18 @@
+{
+  "name": "rf-log",
+  "version": "1.0.0",
+  "description": "The best radio frequency logger!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "radio"
+  ],
+  "author": "Brandon14",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^9.0.5",
+    "lowdb": "^1.0.0"
+  }
+}
