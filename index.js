@@ -1,16 +1,14 @@
 const { app, BrowserWindow } = require('electron')
 
-function createWindow () {
-  // Create the browser window.
+function mainWindow () {
   let win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 500,
+    height: 350,
     webPreferences: {
       nodeIntegration: true
-    }
+    },
   })
-  // and load the index.html of the app.
   win.loadFile('./app/index.html')
 }
 
-app.whenReady().then(createWindow)
+app.whenReady().then(mainWindow)
