@@ -9,16 +9,27 @@
 </head>
 
 <body>
-  <h1>Testing</h1>
-  <div style="float: left">
+  <div style="padding-top: 30px;">
+  <h2 class="title" style="padding-left: 20px;">Add to log</h2>
+  <div style="float: left; padding-left: 20px;">
     <input class="input" type="nameTXT" id="nameTXT" size="16" placeholder="Name">
   </div>
   
   <div style="float: left; padding-left: 20px">
     <input class="input" type="freqTXT" id="freqTXT" size="16" placeholder="Frequency">
   </div>
+  </div>
+  <button onclick="addDB()" class="button is-success" id=addBTN>Add</button>
+  <div>
 
-  <button onclick="addDB()" class="button is-success">Add</button>
+  </div>
+  <script>
+  document.querySelector("#addLinks").addEventListener("keyup", event => {
+    if(event.key !== "Enter") return;
+    document.querySelector("#addBTN").click(); 
+    event.preventDefault(); 
+});
+</script>
 </body>
 
 </html>
