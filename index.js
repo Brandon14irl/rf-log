@@ -2,6 +2,7 @@ const electron = require("electron")
 const { app, BrowserWindow, } = require('electron')
 const Menu = electron.Menu
 const MenuItem = electron.MenuItem
+const settings = require("./utils/settings.js")
 
 function mainWindow () {
   let win = new BrowserWindow({
@@ -20,9 +21,7 @@ function mainWindow () {
       submenu: [
         {
           label: "Settings",
-          click: function(){
-            console.log("settings pressed")
-          }
+          click: settings.settingWindow
         },
         {
           label: "Exit",
