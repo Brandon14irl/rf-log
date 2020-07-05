@@ -2,18 +2,19 @@ const electron = require("electron")
 const { app, BrowserWindow, } = require('electron')
 const Menu = electron.Menu
 const MenuItem = electron.MenuItem
-const settings = require("./utils/settings.js")
+const settings = require("./js/settings.js")
+ 
 
 function mainWindow () {
   let win = new BrowserWindow({
     width: 500,
-    height: 350,
+    height: 300,
     resizable: false,
     webPreferences: {
       nodeIntegration: true
     },
   })
-  win.loadFile('./main/index.html')
+  win.loadFile('./pages/index.html')
 
   const menuBar = [
     {
