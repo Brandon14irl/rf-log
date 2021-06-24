@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "The best radio frequency logger!",
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/Brandon14irl/rf-log.git"
+    "type": "git",
+    "url": "https://github.com/Brandon14irl/rf-log.git"
   },
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "Brandon14",
   "license": "ISC",
   "dependencies": {
-    "electron": "^9.0.5",
-    "lowdb": "^1.0.0"
+    "electron": "^13.1.4",
+    "lowdb": "^2.1.0"
   }
 }
