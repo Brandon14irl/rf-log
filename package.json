@@ -16,7 +16,7 @@
   "author": "Brandon14",
   "license": "ISC",
   "dependencies": {
-    "electron": "^13.6.6",
+    "electron": "^15.5.5",
     "lowdb": "^2.1.0"
   }
 }
